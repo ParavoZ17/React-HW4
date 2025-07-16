@@ -4,6 +4,7 @@ import CityCard from './components/CityCard'
 import CitySelector from './components/CitySelector'
 import data from "./citiesData"
 import { useState } from 'react'
+import MathQuiz from './components/MathQuiz'
 
 
 function App() {
@@ -24,6 +25,7 @@ setCity(value)
     <>
     <CitySelector data={data} handleSelect={selectCity}/>
     {city === '' ? <p>Сделайте выбор</p> :<CityCard data={selectedCity}/>}
+    <MathQuiz/>
     </>
   )
 }
